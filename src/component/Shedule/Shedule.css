@@ -1,0 +1,45 @@
+.shedule__container {
+	width: 30%;
+	height: 100%;
+}
+.nav__shedule {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+.btn__navShedule {
+	width: 30%;
+}
+.search {
+	border: 1px solid #000000;
+	width: 80%;
+	padding: 5px;
+}
+.search__block {
+	margin-top: 15px;
+	margin-left: 2%;
+}
+.btn__search {
+	width: 18%;
+	border: 1px solid black;
+	padding: 5px;
+}
+li {
+	margin-left: 5px;
+}
+.btn__routeNum {
+	width: 10%;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 1.8;
+	text-align: center;
+	margin: 5px 0px 0 0;
+	padding: 0;
+	background-color:#dc3131;
+}
+.text__routeName {
+	font-size: 17px;
+	margin-left: 5px;
+}

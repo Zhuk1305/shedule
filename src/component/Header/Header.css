@@ -1,0 +1,22 @@
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 5px;
+}
+.header__nameCompany {
+margin-left: 10px;
+width: 325px;
+height: 50px;
+}
+.header__logo {
+width: 60px;
+height: 80px;
+}
+/* img {
+	width: 100%;
+	height: 100%;
+} */
