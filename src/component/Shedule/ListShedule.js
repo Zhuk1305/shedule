@@ -15,7 +15,7 @@ class ListShedule extends Component {
 		this.reloadSheduleList();
 	}
 	reloadSheduleList() {
-		fetch("https://psv4.userapi.com/c856224/u190654373/docs/d10/59cc06b788a5/routesBus.txt?extra=9OWUfyk-RsMqP6ZYa26SG-yKICAShahwypGrKKNF67KqQpyOAs8eFGvG2Q45fT9P6-u02oKqX0XgV12C3bo9vjOyUi3jjr_Jt23FT-M19Hz5JEhR_tYRigGkoyIlctbv1UdEhm-z5xWBvDrrCv3-uoG2&dl=1")
+		fetch("https://raw.githubusercontent.com/Zhuk1305/shedule/master/src/data/routesBus.txt")
 		.then(res => res.json())
 		.then(transport => { 
 			this.setState({
@@ -37,11 +37,11 @@ render() {
 				return <div>Загрузка...</div>;
 			} else {
 	 return(
-			<div>
+			<div className="transport__route">
 					<ul>
 						{
 							transport.map(transport => 
-								<div key={transport.RouteNum}>
+								<div key={transport.RouteID}>
 								{(transport.RouteType === 'A>B' && transport.RouteNum !== '') ?
 								(<li>
 			<button className="btn__routeNum">{transport.RouteNum}</button>
