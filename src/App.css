@@ -2,4 +2,8 @@
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	justify-content: space-around;
+	width: 100vw;
+	height: 100vh;
+	max-height: 1000px;
 }

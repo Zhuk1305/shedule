@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './Shedule.css';
 
-class ListShedule extends Component {
+class ListBus extends Component {
 	constructor(props) {
 		super(props)
 		this.state = {
@@ -29,23 +29,25 @@ class ListShedule extends Component {
 				});
 			})
 	}
+	
 render() {
-		const { error, isLoaded, transport } = this.state;
+
+	const { error, isLoaded, transport } = this.state;
 			if (error) {
 				return <div>Ошибка: {error.message}</div>;
 			} else if (!isLoaded) {
 				return <div>Загрузка...</div>;
 			} else {
 	 return(
-			<div className="transport__route">
+			<div className="transport-route">
 					<ul>
 						{
 							transport.map(transport => 
 								<div key={transport.RouteID}>
 								{(transport.RouteType === 'A>B' && transport.RouteNum !== '') ?
 								(<li>
-			<button className="btn__routeNum">{transport.RouteNum}</button>
-			<span className="text__routeName">{transport.RouteName}</span>
+			<button className="btn-routeNum">{transport.RouteNum}</button>
+			<span className="text-routeName">{transport.RouteName}</span>
 		</li>)
 			:undefined}
 			</div>
@@ -56,4 +58,4 @@ render() {
 }
 }
 
-export default ListShedule;
+export default ListBus;
